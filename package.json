@@ -4,7 +4,9 @@
   "description": "A neumorphic redesign of the calculator",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser==firefox",
+    "start": "npm-run-all --parallel devserver watch:sass"
   },
   "repository": {
     "type": "git",

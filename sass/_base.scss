@@ -1,0 +1,28 @@
+:root{
+    //COLOURS
+    --color-orange: hsl(29, 98%, 52%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-link: hsl(228, 45%, 44%);
+    --color-bg: hsl(0, 0%, 94%);
+
+    //TYPOGRAPHY
+    --font-ans: 'Big Shoulders Stencil Display', cursive;
+    --font-buttons: 'Roboto Mono', monospace;
+}
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 100%; //Default font-size for the browser is 16px using 100% implies that you're using the 16px. This will also apply to any rem unit we use; it will be 16 * that number
+}
+
+body{
+    padding: 1rem;
+    background-color: #62857A;
+}
