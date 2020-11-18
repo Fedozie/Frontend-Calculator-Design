@@ -1,0 +1,203 @@
+.button{
+    &:hover > *{
+        transform: scale(.8); //On hover, the button scales down
+    }
+
+    &__c{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    &__pars{
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    &__divide{
+        grid-column: 4 /span 1;
+        grid-row: 1 / span 1;
+    }
+
+    &__times{
+        grid-column: 4 /span 1;
+        grid-row: 2 / span 1;
+    }
+
+    &__minus{
+        grid-column: 4 /span 1;
+        grid-row: 3 / span 1;
+    }
+
+    &__add{
+        grid-column: 4 /span 1;
+        grid-row: 4 / span 1;
+    }
+
+    &__equals{
+        grid-column: 4 /span 1;
+        grid-row: 5 / span 1;
+    }
+
+    &__0{
+        grid-column: 1 / span 3;
+        grid-row: 5 / span 1;
+    }
+
+    &__1{
+        grid-column: 1 /span 1;
+        grid-row: 4 / span 1;
+    }
+
+    &__2{
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    &__3{
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    &__4{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    &__5{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    &__6{
+        grid-column: 3 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    &__7{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    &__8{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    &__9{
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    &__orange{
+
+    }
+
+    &__grey{
+
+    }
+}
+
+%one-spans{
+    //Extend for the buttons that occupy on span of the grid container
+    width: 4rem;
+    height: 4rem;
+}
+
+.inner-button{
+    &, &:link, &:visited{
+        font-family: var(--font-buttons);
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 1rem auto;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(-45deg, rgba(0,0,0,0.25), rgba(255,255,255,0.25)); //Gives the buttons a convex appearance on the surface
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25), -5px -5px 8px rgba(255, 255, 255, 0.25); //Gives the buttons a neumorphic feel
+        transition: all .3s;
+    }
+
+    &:active, &:focus{
+        background: linear-gradient(135deg, rgba(0,0,0,0.25), rgba(255, 255, 255, 0.25)); //Gives the buttons a concave surface appearance when clicked
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25), -5px -5px 8px rgba(255, 255, 255, 0.25);
+        outline: none;  
+    }
+
+    &__c{
+        width: 10rem;
+        height: 4rem;
+    }
+
+    &__pars{
+        @extend %one-spans;
+    }
+
+    &__divide{
+        @extend %one-spans;
+    }
+
+    &__times{
+        @extend %one-spans;
+    }
+
+    &__minus{
+        @extend %one-spans;
+    }
+
+    &__add{
+        @extend %one-spans;
+    }
+
+    &__equals{
+        @extend %one-spans;
+    }
+
+    &__0{
+        width: 16rem;
+        height: 4rem;
+    }
+
+    &__1{
+        @extend %one-spans;
+    }
+
+    &__2{
+        @extend %one-spans;
+    }
+
+    &__3{
+        @extend %one-spans;
+    }
+
+    &__4{
+        @extend %one-spans;
+    }
+
+    &__5{
+        @extend %one-spans;
+    }
+
+    &__6{
+        @extend %one-spans;
+    }
+
+    &__7{
+        @extend %one-spans;
+    }
+
+    &__8{
+        @extend %one-spans;
+    }
+
+    &__9{
+        @extend %one-spans;
+    }
+
+    &__orange{
+        color: var(--color-orange);
+    }
+
+    &__grey{
+        color: var(--color-black);
+    }
+}

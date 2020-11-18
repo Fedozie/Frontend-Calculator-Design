@@ -1,0 +1,88 @@
+.container{
+    margin: .5rem auto;
+    height: 44rem; //Height of the calculator
+    width: 25rem; //Width of the calculator
+    margin-bottom: 1rem;
+    background-color: rgb(29, 29, 29);
+    border-radius: 2rem;
+}
+
+.top{
+    height: 30%;
+    background-color: rgb(29, 29, 29);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    
+    &__svg{
+        fill: white;
+        display: flex;
+        justify-content: space-between;
+        margin: 12px 10px;
+
+        &-left{
+            height: 1.3rem;
+            width: 1.3rem;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+
+        &-right{
+            height: 1.3rem;
+            width: 1.3rem;
+            position: absolute;
+            top: 8px;
+            right: 9px;
+        }
+    }
+
+    &__box{
+        width: 2.3rem;
+        height: 2.3rem;
+        display: inline-block;
+        background-color: rgba(176, 176, 176, 0.281);
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        transition: background-color .3s cubic-bezier(.53,.65,.51,.22);
+
+        &:hover{
+            background-color: rgba(176, 176, 176, 0); //Opacity changes on hover
+        }
+    }
+
+    &__display{
+        margin: 8px 5px;
+    }
+
+    &__heading{
+        text-align: right;
+        font-family: var(--font-ans);
+        font-size: 3rem; 
+        margin-right: 12px;
+    }
+}
+
+.bottom{
+    background-color: var(--color-bg);
+    height: 70%;
+    border-radius: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer{
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+    & a{
+        text-decoration: none;
+        color: var(--color-link);
+    }
+}
