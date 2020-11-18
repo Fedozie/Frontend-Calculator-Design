@@ -51,7 +51,7 @@
         transition: background-color .3s cubic-bezier(.53,.65,.51,.22);
 
         &:hover{
-            background-color: rgba(176, 176, 176, 0);
+            background-color: rgba(176, 176, 176, 0); //Opacity changes on hover
         }
     }
 
@@ -71,8 +71,6 @@
     background-color: var(--color-bg);
     height: 70%;
     border-radius: 2rem;
-    // border-bottom-left-radius: 2rem;
-    // border-bottom-right-radius: 2rem;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
